@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "tejus_backend": {
+      "main": "src/tejus_backend/main.mo",
+      "type": "motoko"
+    },
+    "tejus_frontend": {
+      "dependencies": [
+        "tejus_backend"
+      ],
+      "source": [
+        "src/tejus_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "tejus_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
